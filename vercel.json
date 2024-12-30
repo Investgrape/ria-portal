@@ -1,0 +1,1 @@
+{\n  \"version\": 2,\n  \"builds\": [{\n    \"src\": \"package.json\",\n    \"use\": \"@vercel/static-build\",\n    \"config\": { \"distDir\": \"build\" }\n  }],\n  \"routes\": [{\n    \"handle\": \"filesystem\"\n  },\n  {\n    \"src\": \"/.*\",\n    \"dest\": \"/index.html\"\n  }],\n  \"github\": {\n    \"silent\": true\n  }\n}
